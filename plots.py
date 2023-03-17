@@ -43,6 +43,6 @@ for data_type in data_types.keys():
        plt.errorbar(ns, measured_time, yerr=measured_std)
        plt.scatter(ns, measured_time)
 
-    plt.legend(['merge sort', 'quick sort', 'heap sort', 'selection sort', 'insertion sort'])
+    plt.legend(['merge sort', 'quick sort', 'heap sort', 'selection sort', 'insertion sort', 'bubble sort'])
     plt.savefig(f"{data_type}_plot.png")
     plt.cla()
